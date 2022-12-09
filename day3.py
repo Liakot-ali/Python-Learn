@@ -1,5 +1,5 @@
 cnt = 1
-while cnt <= 10:
+while cnt <= 1:
     print("Hello")
     print("This is in loop")
     cnt += 1
@@ -46,5 +46,14 @@ help - To see details
         help - To see details
         ''')
 
-for i in "Liakot":
-    print(i)
+list = ["Liakot", "Shisir", "Shawon", "Shuvo", "Rajul", "Bappy", "Akkas", "Masum"]
+
+#Multi-type list
+mL = ["Liakot", True, 4, "Hello", 1]
+print(list[-2])
+print(list)
+print(mL)
+print(type(mL))
+for i in mL:
+    print(str(i) + " ")
+    print(type(i))
