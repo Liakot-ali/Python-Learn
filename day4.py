@@ -9,6 +9,7 @@ for i in star:
         out += "*"
     print(out)
 
+
 list = ["Liakot", "Shisir", "Shawon"]
 i = 0
 while i < len(list):
