@@ -35,3 +35,8 @@ for item in ml:
     if item not in uniques:
         uniques.append(item)
 print(uniques)
+
+tuple = (5,2,4)
+print(tuple)
+print(tuple.index(2))
+print(tuple.count(1))
