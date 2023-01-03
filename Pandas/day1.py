@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import openpyxl as xl
 
 # Pandas series
 ser = pd.Series(np.random.randint(1, 100, 50))
@@ -25,3 +26,20 @@ print(df, dfUp)
 print(df)
 df.loc[0, 'B'] = 24
 print(df)
+# Print where Column A is only 15
+print(df['A'] == 16)  # It returns true or false of the column A
+print(df.loc[df['A'] == 15])
+
+# Read CSV and XLSX
+
+file1 = pd.read_csv("example.csv")
+print(file1)
+
+try:
+    file2 = pd.read_excel("file1.xlsx")
+    print(file2)
+except ImportError as ie:
+    print("Import error : ", ie)
+
+df.to_csv("random.csv")
+df.to_excel("rand.xlsx")
