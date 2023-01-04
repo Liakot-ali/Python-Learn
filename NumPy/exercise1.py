@@ -1,5 +1,5 @@
 import numpy as np
-# Write a NumPy program to display all the dates for the month of January, 2023
+# Write a NumPy program to display all the dates for the month of January 2023
 dates = np.arange('2023-01', '2024-01', dtype="datetime64[D]")
 print(dates)
 
