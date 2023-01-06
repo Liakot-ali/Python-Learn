@@ -13,12 +13,14 @@ font2 = {'family' : 'serif' , 'color' : 'darkred' , 'size' : 15}
 # Subplot 1
 plt.subplot(1, 2, 1)
 plt.title('Subplot 1')
-plt.plot(x, y, 'g', ms='10', mec='r', mfc='b', lw='5', ls='-')
+plt.plot(x, x**2, 'og', ms='10', mec='r', mfc='b', lw='5', ls='-', label="y=x^2")
+plt.legend()
 
 # Subplot 2
 plt.subplot(1, 2, 2)
 plt.title('Subplot 2')
-plt.plot(y, x, ls='-', lw='5')
+plt.plot(y, y**2, ls='-', lw='5', label='y=3x')
+plt.legend()
 
 plt.show()
 
