@@ -20,6 +20,7 @@ regressor.fit(X_train, y_train)
 
 # Predict the score using test data set
 predict = regressor.predict(x_test)
+
 # Showing the actual and predicted dataset
 x = 0
 for i in predict:

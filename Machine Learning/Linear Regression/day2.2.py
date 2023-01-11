@@ -1,3 +1,4 @@
+# Implementing linear regression using scipy.stats sub-package
 from scipy import stats
 import numpy as np
 import pandas as pd
