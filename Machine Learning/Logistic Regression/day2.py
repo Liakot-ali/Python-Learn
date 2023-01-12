@@ -18,7 +18,7 @@ X_test = np.array(X_test).reshape(-1, 1)
 
 # print(X_train.shape, y_train.shape)
 # Learn the model
-logr = LogisticRegression()
+logr = LogisticRegression(solver='liblinear')
 logr.fit(X_train, y_train)
 
 # Predict the value
