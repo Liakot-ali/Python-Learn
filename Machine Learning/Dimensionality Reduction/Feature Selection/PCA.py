@@ -17,11 +17,14 @@ scaler.fit(df)
 
 # Find the best components using PCA
 scaled_data = scaler.transform(df)
-pca = PCA(n_components=2)   # only 2 principal components will be selected
+pca = PCA()   # only 2 principal components will be selected
 pca.fit(scaled_data)
 
 # Get the components value
 # print(pca.explained_variance_, pca.explained_variance_ratio_)
+var = pca.explained_variance_ratio_
+feature = pca.get_feature_names_out()
+
 x_pca = pca.transform(scaled_data)
 # print(pca.get_feature_names_out())
 # print(pca.components_)
@@ -29,6 +32,9 @@ x_pca = pca.transform(scaled_data)
 
 # Plotting the value using two feature
 plt.scatter(x_pca[:, 0], x_pca[:, 1], c=data['target'])
+plt.show()
+
+plt.bar(feature, height=var)
 plt.show()
 
 # Showing in headmap
