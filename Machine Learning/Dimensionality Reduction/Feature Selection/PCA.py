@@ -37,7 +37,7 @@ plt.show()
 plt.bar(feature, height=var)
 plt.show()
 
-# Showing in headmap
+# Showing in heatmap
 df_comp = pd.DataFrame(pca.components_, columns=data['feature_names'])
 plt.figure(figsize=(10, 6))
 sns.heatmap(df_comp)
